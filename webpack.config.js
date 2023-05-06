@@ -28,9 +28,13 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, // to import images and fonts
         loader: "url-loader",
-        options: { limit: false },
+        options: {  
+          limit: false,
+          fallback: "file-loader", // Use file-loader for jpg files
+          esModule: false, // Set this to false for webpack 5+ 
+        },
       },
     ],
   },

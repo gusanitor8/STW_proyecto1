@@ -1,3 +1,4 @@
+import "./NavBar.scss";
 import React from "react";
 import usFlag from "../images/usFlag.png";
 import logo from "../images/logo.png";

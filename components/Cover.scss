@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+$font-family: 'Roboto', sans-serif;
+
+h1{
+    font-family: $font-family;    
+    font-weight: 700;
+    margin-top: 0;
+    color: white;
+}
+
+p{
+    font-family: $font-family;
+    font-weight: 300;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .btnContainer{
+        margin-top: 10px ;
+        margin-bottom: 10px;
+
+        color: black;
+        background-color: white; 
+
+        width: fit-content;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+
+        padding-right: 15px;
+        padding-left: 15px;
+
+        font-family: $font-family;
+        letter-spacing: 0.1em;
+        font-size: 0.75em;
+
+        position: relative;
+        
+
+        img{
+            max-height: 25%;
+            width: auto;       
+            margin:0;
+            margin-left: 15px;
+        }
+
+        button{
+            all: unset;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            height: 50px;
+            width: 100%;
+
+            border: 0.5px solid white;
+            left:2px;
+            top:2px;
+        }        
+    }
+
+    .btnContainer:hover{
+        color: gray;
+    }
+}
+
+.container{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.image-container{
+    background-color: blue;
+    background-image: url("../images/cover.webp"); 
+    background-repeat: no-repeat;
+    background-size: cover;      
+
+    position: relative;
+    height: 100%;
+    width: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .content-container{
+        margin: 0;
+        transition: margin-left 0.5s ease-in-out, margin-right 0.5s ease-in-out;
+        flex-basis: 30%;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .content-container{
+            margin-left: 200px;
+            margin-right: 40px;
+        }
+    }
+}
