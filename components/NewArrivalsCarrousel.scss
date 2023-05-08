@@ -1,0 +1,48 @@
+$background-color: rgb(212,215,218);
+
+.new-arrivals-carrousel-super-container{
+    margin-left: 30px;
+}
+
+.new-arrivals-carrousel-tittle-container{
+    font-weight: 700;
+    font-size: 1.5em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    .new-arrivals-carrousel-tittle-selected{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .new-arrivals-carrousel-tittle{
+            color: black;
+            font-weight: inherit;
+            font-size: inherit;
+            margin-right: 35px;
+        }
+        .arrow-icon{
+            height: 20px;
+            width: auto;
+            margin-right: 15px;
+        }
+    }
+
+    .new-arrivals-carrousel-tittle-deselect{
+        color: $background-color;
+        font-weight: inherit;
+        font-size: inherit;
+        margin-right: 1%;
+        
+    }    
+    
+}
+
+.new-arrivals-carrousel-container{
+    overflow-x: scroll;
+    white-space: nowrap;   
+}

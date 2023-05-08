@@ -1,5 +1,7 @@
+$background-color: rgb(237,239,241);
+
 .sneaker-container{
-    background-color: rgb(237,239,241);
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
