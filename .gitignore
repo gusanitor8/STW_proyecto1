@@ -3,3 +3,15 @@ node_modules/*
 
 #macOs
 .DS_Store
+
+#firebase
+firebase.json
+.firebaserc
+.firebase/*
+
+#build
+dist/*
+
+#next.js
+.next/*
+
