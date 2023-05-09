@@ -4,9 +4,9 @@ import Cover from "../components/Cover";
 import SneakerCarrousel from "../components/SneakerCarrousel";
 import NewArrivalsCarrousel from "../components/NewArrivalsCarrousel";
 import CardCarrousel from "../components/CardCarrousel";
-import SportCard from "../components/SportCard";
-import sportImage from "../images/sportCard/football.png"
 import SportCardCarrousel from "../components/SportCardCarrousel";
+import Popular from "../components/Popular";
+import Story from "../components/Story";
 
 const App = () => {
   return (
@@ -17,7 +17,8 @@ const App = () => {
       <NewArrivalsCarrousel/>
       <CardCarrousel/>
       <SportCardCarrousel/>
-        
+      <Popular/>
+      <Story/>
     </>
     );
 };

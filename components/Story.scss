@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+$font-family: 'Roboto', sans-serif;
+$background-color: rgb(245,245,230);
+$tittle-height: 150px;
+
+
+.story-super-container{
+    background-color: $background-color;
+    font-family: $font-family;
+
+
+    .story-grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px; /* adjust the gap size as needed */
+        margin-left: 3%;
+        margin-right: 3%;
+
+        .story-column{
+            //background-color: #e6f9ff; /* change the background color as needed */
+            padding: 20px;
+
+            .column-container{
+                .tittle-container{
+                    font-family: $font-family;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    height: $tittle-height;
+                    width: 50%;
+                    //white-space: normal;
+
+                    .story-tittle{
+                        font-weight: 700;
+                        font-size: 2em;
+                    }
+                }
+                .story-text-container{
+                    .story-text{
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    }
+}

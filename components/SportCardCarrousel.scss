@@ -23,4 +23,9 @@ $font-family: 'Roboto', sans-serif;
         align-items: flex-start;
         height: 300px;
     }
+
+
+    .sport-card-carrousel-container::-webkit-scrollbar {
+        display: none;
+    }
 }
