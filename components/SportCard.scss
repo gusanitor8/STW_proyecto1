@@ -3,47 +3,53 @@ $font-family: 'Roboto', sans-serif;
 $image-height: 185px;
 $image-width: 295px;
 
-.sport-card-super-container{
+.sport-card-super-container {
     font-family: $font-family;
     width: $image-width;
     margin-left: 5px;
     margin-right: 5px;
-
-    .sport-card-image-container{
-        z-index: 0;
-        .sport-card-image{
-            height: $image-height;
-            width: $image-width;
-            object-fit: cover;
-
-            
-        }
+    position: relative; // This is needed to position the text container absolutely
+  
+    .sport-card-image-container {
+      z-index: 0;
+  
+      .sport-card-image {
+        height: $image-height;
+        width: $image-width;
+        object-fit: cover;
+      }
     }
+    .sport-card-text-container-container{
+        //padding-left:10px;
+        //padding-right:10px;
 
-
-    .sport-card-text-container{      
-        white-space: normal;  
-        padding-left: 10px;        
-        padding-right: 10px;
-
-        margin-top: -20px;
-        z-index: 1;
-        background-color: orange;
-
-        .sport-card-tittle-container{            
-            
-
-            .sport-card-tittle{                
-                margin-top: 0px;
+        .sport-card-text-container {
+            white-space: normal;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            position: absolute;
+            top: calc(#{$image-height} - 20px); // This will overlap the image container from below
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-color: white;
+    
+            .sport-card-tittle-container {
+                .sport-card-tittle {
+                    margin-top: 0px;
+                    font-size: 0.8em;
+                }
+            }
+        
+            .sport-card-description-container {
+                .sport-card-description {
+                    margin-top: 10px;
+                    font-weight: 300;
+                    font-size: 0.8em;
+                }
             }
         }
-
-       .sport-card-description-container{
-                                
-            .sport-card-description{
-                margin-top: 10px;
-                font-weight: 300;
-            }
-        }
     }
-}
+  }
+  

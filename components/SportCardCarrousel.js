@@ -6,7 +6,7 @@ import "./SportCardCarrousel.scss";
 const SportCardCarrousel = () => {
     const getSportCards = () => {
         let content = [];
-        for (let i =0; i < 4; i++) {
+        for (let i =0; i < 6; i++) {
           content.push(
             <SportCard 
                 key={i}
@@ -20,9 +20,12 @@ const SportCardCarrousel = () => {
     }
 
     return(
-        <>
+        <>  
             <div className="sport-card-carrousel-super-container">
-                {getSportCards()}
+                <p className="sport-card-carrousel-tittle">MORE FROM ADIDAS STORIES</p>
+                <div className="sport-card-carrousel-container">
+                    {getSportCards()}
+                </div>
             </div>
         </>
     );

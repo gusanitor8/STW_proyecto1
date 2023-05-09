@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+$font-family: 'Roboto', sans-serif;
+
 .sport-card-carrousel-super-container{
     margin-top: 80px;
     margin-right: 1%;
     margin-left: 1%;
 
-    display: flex;
-    flex-direction: row;
+    .sport-card-carrousel-tittle{
+        font-family: $font-family;
+        color: black;
+        margin-left: 5px;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
 
-    overflow-x: scroll;
-    white-space: nowrap;
-    
+    .sport-card-carrousel-container{        
+        display: flex;
+        flex-direction: row;
+
+        overflow-x: scroll;
+        white-space: nowrap;
+        align-items: flex-start;
+        height: 300px;
+    }
 }
