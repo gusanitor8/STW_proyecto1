@@ -2,14 +2,14 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./pages/index.js", // specify the path to your entry file
+  entry: "./src/index.js", // specify the path to your entry file
   output: {
     path: path.join(__dirname, "/dist"), // the bundle output path
     filename: "bundle.js", // the name of the bundle
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "pages/index.html", // to import index.html file inside index.js
+      template: "src/index.html", // to import index.html file inside index.js
     }),
   ],
   devServer: {
