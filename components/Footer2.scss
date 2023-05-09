@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+$font-family: 'Roboto', sans-serif;
+$background-color: rgb(41,44,49);
+
+
+.footer2-super-container{
+    background-color: $background-color;
+    padding-top:30px;
+    padding-bottom:30px;
+
+    .footer2-container{    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: $font-family;
+        font-weight: 300;
+        color: white;    
+        
+        .footer2-item{
+            margin-left:10px;
+            margin-right: 10px;
+            font-size: 0.7em;
+        }
+    }
+}

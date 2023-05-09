@@ -7,6 +7,9 @@ import CardCarrousel from "../components/CardCarrousel";
 import SportCardCarrousel from "../components/SportCardCarrousel";
 import Popular from "../components/Popular";
 import Story from "../components/Story";
+import Promo from "../components/Promo";
+import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
       <SportCardCarrousel/>
       <Popular/>
       <Story/>
+      <Promo/>
+      <Footer/>
+      <Footer2/>
     </>
     );
 };
