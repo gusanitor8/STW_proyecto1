@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+$font-family: 'Roboto', sans-serif;
 $background-color: rgb(212,215,218);
 
 .new-arrivals-carrousel-super-container{
@@ -5,6 +7,7 @@ $background-color: rgb(212,215,218);
 }
 
 .new-arrivals-carrousel-tittle-container{
+    font-family: $font-family;
     font-weight: 700;
     font-size: 1.5em;
 
@@ -36,7 +39,7 @@ $background-color: rgb(212,215,218);
         color: $background-color;
         font-weight: inherit;
         font-size: inherit;
-        margin-right: 1%;
+        margin-right: 35px;
         
     }    
     

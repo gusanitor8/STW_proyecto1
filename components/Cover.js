@@ -12,7 +12,7 @@ const Cover = () => {
                     <div className="content-container">
                         <div className="content">
                             <h1 className="adiColor">ADICOLOR 70S</h1>
-                            <p>Bold characters, statement looks and home hangs. adicolor 70s is back.</p>
+                            <p className="text">Bold characters, statement looks and home hangs. adicolor 70s is back.</p>
                             <div className="buttons">
                                 <div className="btnContainer">
                                     <button>SHOP MEN</button>

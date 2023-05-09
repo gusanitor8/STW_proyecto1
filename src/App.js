@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Cover from "../components/Cover";
 import SneakerCarrousel from "../components/SneakerCarrousel";
 import NewArrivalsCarrousel from "../components/NewArrivalsCarrousel";
-import girl from "../images/newArrivals/girl.png"
+import CardCarrousel from "../components/CardCarrousel";
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
       <Cover/>
       <SneakerCarrousel/>
       <NewArrivalsCarrousel/>
+      <CardCarrousel/>
     </>
     );
 };

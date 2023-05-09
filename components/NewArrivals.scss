@@ -29,11 +29,12 @@ $font-family: 'Roboto', sans-serif;
 
         .price{
             position: absolute;
-            top: 262px;
+            top: 248px;
             left: 7px;
             background-color: white;
             color:black;
             font-size: 0.9em;
+            font-weight: 300;
 
             transition: top 0.1s ease-in-out;
         }
@@ -41,7 +42,7 @@ $font-family: 'Roboto', sans-serif;
 
     .new-arrival-text-container{
         text-decoration: none;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 0.8em;
 
         padding-left:7px;
@@ -73,7 +74,7 @@ $font-family: 'Roboto', sans-serif;
         border: 1px solid gray;
 
         .price{
-            top:257px
+            top:240px
         }
     }
 }
